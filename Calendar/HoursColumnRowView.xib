@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="o6L-mb-zmk" customClass="HoursColumnRowView">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFT-ug-mPI">
+                    <rect key="frame" x="31" y="104" width="14" height="16"/>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:59" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxm-Vo-hyM">
+                    <rect key="frame" x="15" y="0.0" width="30" height="16"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                    <color key="textColor" red="0.1843137255" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zxm-Vo-hyM" firstAttribute="top" secondItem="o6L-mb-zmk" secondAttribute="top" id="Bjd-Ic-nuC"/>
+                <constraint firstAttribute="trailing" secondItem="LFT-ug-mPI" secondAttribute="trailing" constant="5" id="G5e-YV-wbL"/>
+                <constraint firstAttribute="trailing" secondItem="Zxm-Vo-hyM" secondAttribute="trailing" constant="5" id="RDN-aj-hRc"/>
+                <constraint firstAttribute="bottom" secondItem="LFT-ug-mPI" secondAttribute="bottom" id="go6-VL-bCd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currentHourLabel" destination="Zxm-Vo-hyM" id="A1p-uH-T3i"/>
+                <outlet property="currentHourVerticalSpaceLayoutConstraint" destination="Bjd-Ic-nuC" id="Sz8-oT-9jH"/>
+                <outlet property="hourLabel" destination="LFT-ug-mPI" id="OHa-uz-kbi"/>
+            </connections>
+        </view>
+    </objects>
+</document>
